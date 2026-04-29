@@ -14,6 +14,7 @@
     --texto-header: #F9F9F9;
     --destaque: #00D1B2;           /* Verde Esmeralda vibrante (o "neon" da tecnologia) */
     --destaque-hover: #00A38B;
+    --fundo-card: #3566a7c7;
 }
 
 body{
@@ -49,3 +50,67 @@ header > nav > ul > li > a:hover{
     border-radius: 5px;
     background-color: var(--destaque-hover);
 }
+
+main{
+    display: grid;
+    grid-template-columns: auto 90vw auto;
+    margin-top: 20px;
+}
+
+main > section#ficha{
+    grid-column-start: 2;
+    gap: 20px;
+    background-color: var(--fundo-card);
+    padding: 20px;
+    border-radius: 7px;
+}
+
+main > section#ficha > img.foto{
+    width: 200px;
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--fundo-card);
+    outline:2px solid var(--destaque-hover);
+}
+
+main > section#ficha > h1{
+    color: rgb(253, 252, 252);
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.788);
+    text-align: left;
+    font-size: 1.5em;
+    margin: 15px 0px;
+    padding: 5px;
+}
+
+main > section#ficha >p{
+    line-height: 1.6;
+    padding: 5px;
+    color: var(--texto);
+    font-weight: 600;
+}
+
+div#social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin:5px;
+    gap: 10px;
+    font-size: 1.5em;
+}
+
+div#social > a{
+    color: var(--fundo-header);
+    transition: color 0.5s;
+}
+
+div#social > a:hover{
+    background-color:var(--fundo-card);
+    font-size: 0.8em;
+    transition-duration: 0.5s;
+}
+
