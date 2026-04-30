@@ -253,6 +253,15 @@ article#projectos > h2{
     cursor: pointer;
 }
 
+#formacao-container > .curso > h3 > a{
+    text-decoration: none;
+    color: var(--fundo-article);
+}
+
+#formacao-container > .curso > h3 > a:hover{
+    text-decoration: underline;
+}
+
 #formacao-container > .curso > p{
     font-weight: 700;
     color: var(--fundo-card);
