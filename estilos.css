@@ -334,6 +334,16 @@ footer{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+footer > a{
+    text-decoration: none;
+    color: var(--texto-header);
+}
+
+footer > a:hover{
+    color: var(--destaque-hover);
+}
+
+
 
 
 
