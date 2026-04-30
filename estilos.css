@@ -17,6 +17,15 @@
     --fundo-card: #3566a7c7;
 }
 
+body.escuro{
+    --fundo-principal: #0D0F14;;
+    --fundo-article: #1f666b;      /* Um preto "petróleo" muito elegante */
+    --texto-header: #F9F9F9;
+    --destaque: #212222;           /* Verde Esmeralda vibrante (o "neon" da tecnologia) */
+    --destaque-hover: #00A38B;
+    --fundo-card: #0060c0;
+}
+
 body{
     background-color: var(--fundo-principal);
     color: var(--texto);
