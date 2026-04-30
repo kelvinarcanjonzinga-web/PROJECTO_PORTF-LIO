@@ -75,6 +75,11 @@ main > section#ficha > img.foto{
     border-radius: 50%;
     border: 2px solid var(--fundo-card);
     outline:2px solid var(--destaque-hover);
+    transition: width 0.5s;
+}
+
+main > section#ficha > img.foto:hover{
+    width: 250px;
 }
 
 main > section#ficha > h1{
