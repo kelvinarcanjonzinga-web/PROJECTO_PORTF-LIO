@@ -163,8 +163,9 @@ article#habilidades{
 }
 
 article#habilidades > h2{
+    padding-bottom: 15px;
     font-family: unset;
-    font-size: 1.3em;   
+    font-size: 1.3em; 
 }
 
 article#formacao{
@@ -186,5 +187,44 @@ article#projectos > h2{
     font-size: 1.3em;
 }
 
+#habilidades-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+#habilidades-container > div.item > div.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#habilidades-container > div.item > div.info > .nome{
+    font-weight: bold;
+    color: var(--fundo-principal);
+}
+
+#habilidades-container > div.item > div.info > .percentagem{
+    font-weight: bold;
+}
 
 
+#habilidades-container > div.item > div.barra{
+    width: 100%;
+    height: 8px;
+    background-color: var(--destaque);
+    border-radius: 5px;
+}
+
+#habilidades-container > div.item > div.barra > .progresso{
+    width: 90%;
+    height: 100%;
+    background-color: var(--fundo-article);
+    border-radius: 5px;
+}
+
+@media screen and (min-width:768px){
+    #habilidades-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
