@@ -325,6 +325,15 @@ article#projectos > h2{
     color: var(--fundo-principal);
 }
 
+footer{
+    background-color: var(--fundo-article);
+    color: var(--texto-header);
+    text-align: center;
+    padding: 15px;
+    font-size: 1.19em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 
 
 
